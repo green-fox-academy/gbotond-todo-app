@@ -22,6 +22,7 @@ namespace TodoApp
                                   "-r   Removes an task \n" +
                                   "-c   Completes an task");
             }
+
             else if (args.Contains("-l"))
             {
                 string[] text = File.ReadAllLines("todolist.txt");
@@ -30,6 +31,7 @@ namespace TodoApp
                 {
                     Console.WriteLine("No todos for today! :)");
                 }
+
                 else
                 {
                     for (int i = 0; i < text.Length; i++)
@@ -38,6 +40,7 @@ namespace TodoApp
                     }
                 }
             }
+
             else if (args.Contains("-a"))
             {
                 try
@@ -52,6 +55,13 @@ namespace TodoApp
                 {
                     Console.WriteLine("Unable to add: no task provided");
                 }             
+            }
+
+            else if (args.Contains("-r"))
+            {
+                var file = new List<string>(File.ReadAllLines("todolist.txt"));
+                    file.RemoveAt(Convert.ToInt32(args[1]) - 1);
+                    File.WriteAllLines("ToDoList.txt", file);
             }
             
             Console.ReadLine();
