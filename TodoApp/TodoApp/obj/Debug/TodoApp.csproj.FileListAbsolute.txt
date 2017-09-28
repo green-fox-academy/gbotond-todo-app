@@ -1,0 +1,7 @@
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\bin\Debug\TodoApp.exe.config
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\bin\Debug\TodoApp.exe
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\bin\Debug\TodoApp.pdb
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\obj\Debug\TodoApp.csprojResolveAssemblyReference.cache
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\obj\Debug\TodoApp.csproj.CoreCompileInputs.cache
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\obj\Debug\TodoApp.exe
+C:\Users\Botond\Documents\Greenfox\gbotond-todo-app\TodoApp\TodoApp\obj\Debug\TodoApp.pdb
