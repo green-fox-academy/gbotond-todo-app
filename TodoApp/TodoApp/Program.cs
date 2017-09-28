@@ -40,10 +40,18 @@ namespace TodoApp
             }
             else if (args.Contains("-a"))
             {
-                using (StreamWriter writer = File.AppendText("todolist.txt"))
+                try
                 {
-                    writer.WriteLine("\n" + args[1]);
+                    using (StreamWriter writer = File.AppendText("todolist.txt"))
+                    {
+                        writer.WriteLine("\n" + args[1]);
+                    }
                 }
+
+                catch
+                {
+                    Console.WriteLine("Unable to add: no task provided");
+                }             
             }
             
             Console.ReadLine();
