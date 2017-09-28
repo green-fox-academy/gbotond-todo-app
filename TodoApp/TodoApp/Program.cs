@@ -31,14 +31,21 @@ namespace TodoApp
                     Console.WriteLine("No todos for today! :)");
                 }
                 else
-                {                    
+                {
                     for (int i = 0; i < text.Length; i++)
                     {
                         Console.WriteLine((i + 1) + " - " + text[i]);
                     }
                 }
             }
-
+            else if (args.Contains("-a"))
+            {
+                using (StreamWriter writer = File.AppendText("todolist.txt"))
+                {
+                    writer.WriteLine("\n" + args[1]);
+                }
+            }
+            
             Console.ReadLine();
         }
     }
