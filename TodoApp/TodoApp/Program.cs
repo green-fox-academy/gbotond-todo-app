@@ -14,7 +14,7 @@ namespace TodoApp
             if (args.Length == 0)
             {
                 Console.WriteLine("Command Line Todo application \n" +
-                              "=============================");
+                                  "=============================");
                 Console.WriteLine();
                 Console.WriteLine("Command line arguments: \n" +
                                   "-l   Lists all the tasks \n" +
@@ -61,7 +61,7 @@ namespace TodoApp
             {
                 var file = new List<string>(File.ReadAllLines("todolist.txt"));
                     file.RemoveAt(Convert.ToInt32(args[1]) - 1);
-                    File.WriteAllLines("ToDoList.txt", file);
+                    File.WriteAllLines("Todolist.txt", file);
             }
             
             Console.ReadLine();
